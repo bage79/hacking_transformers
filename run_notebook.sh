@@ -1,8 +1,10 @@
-git remote add upstream/master https://github.com/ModuNLP/hacking_transformers
+git remote add upstream https://github.com/ModuNLP/hacking_transformers
 git remote -v
 git branch
-git pull upstream/master master
+git pull
+git pull upstream master
 
+pyenv local hacking_transformers
 pip install --upgrade pip
 pip install -U pip transformers
 pip install -r requirements.txt
